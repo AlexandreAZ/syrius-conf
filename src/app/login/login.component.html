@@ -1,0 +1,33 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active">CONFIGURAÇÕES</h2> 
+   
+      <!-- Login Form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuário" formControlName="username" maxlength="20" 
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback"></div>
+        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha" formControlName="password" maxlength="10"
+        [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback"></div>
+        <input type="submit" class="fadeIn third" value="entrar"> 
+        
+        <div *ngIf="erro" style="color: red;">{{erro}}</div> 
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <!-- Icon -->
+        <div class="fadeIn first"> 
+        </div>
+        <!-- <a class="underlineHover" href="#">Esqueceu a senha?</a>-->
+        <div class="rodape"> 
+          <div style="align-content: center;">
+             Sistema de manutenção <br> (46) 99999 - 0000 <br>  
+          </div> 
+      </div>
+      </div>
+  
+    </div>
+  </div>

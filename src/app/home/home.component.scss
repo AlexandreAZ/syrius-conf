@@ -1,0 +1,46 @@
+    .content{
+        align-content: center;
+        height: 100%; 
+    }
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    th{
+        font-weight: bold;
+      }
+      
+    table {
+        width: 100%;
+    }
+
+    .filtro{
+        padding: 10px;
+    }
+    .logomain{
+        align-content: center;
+        text-align: center;
+    }
+    .item{
+        text-align: center;
+        font-size: medium;
+    }
+    mat-form-field {
+        background-color: white;
+        width: 100%;
+    }
+
+    mat-sidenav-container{
+        height: 85%;
+    }
+    tr.element-row:not(.expanded-row):hover {
+        background: rgb(223, 223, 223);
+    }
+    
+    tr.element-row:not(.expanded-row):active {
+        background: #e9b8b8;
+    }
+    
+    .element-row td {
+        border-bottom-width: 0;
+    }
